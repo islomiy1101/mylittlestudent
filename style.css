@@ -1,0 +1,94 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+.box2{
+    width: 100px;
+    height: 100px;
+    margin: 50px;
+    background: orchid;
+    animation: squared 4s linear 0s 2 alternate backwards;
+}
+@keyframes squared{
+    0%{
+        transform: translate(0,0);
+    }
+    20%{
+        transform: translate(700px,0);
+    }
+    50%{
+        transform: translate(700px,500px);
+    }
+    75%{
+        transform: translate(0,500px);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @keyframes square{
+    from{transform: rotate(0);}
+    to{transform: rotate(720deg);}
+} */
+
+.box{
+    float: left;
+    width: 200px;
+    height: 250px;
+    background: orange;
+    margin: 30px;
+    animation-name:action ; /*animatsiya nomi*/
+    animation-duration: 2s;/*animatsiya davomiyligi*/
+    animation-iteration-count: infinite;/*animatsiya takrorlanishlari soni*/
+    animation-timing-function:linear;/*animatsiya harakatlanish turi*/
+    animation-delay: 0s;/*animatsiyani kutish*/
+    animation-fill-mode: forwards;
+    /* animation-direction: normal; */
+    /* animation-direction: reverse; */
+    animation-direction: alternate;
+    /* animation-direction: alternate-reverse; */
+    animation-play-state: running;/* running or paused*/
+}
+
+/* @keyframes widen{
+    from{
+        width: 100px;
+    }
+    to{
+        width: 500px;
+    }
+} */
+/* 
+@keyframes action{
+    from{
+        transform:skewX(20deg);
+    }
+    to{
+        transform:skewX(-20deg);
+    }
+} */
